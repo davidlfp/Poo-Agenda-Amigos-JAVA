@@ -1,0 +1,57 @@
+TRABALHO: Agenda de Amigos
+1. Descrição do Trabalho
+Criar uma agenda para organizar todos os contatos de seus amigos.
+Na agenda deverá ser possível armazenar o nome do amigo, o endereço (Rua, numero, complemento, cidade, estado e CEP), celular, e-mail e data de nascimento.
+Para desenvolver a Agenda de Amigos, utilizar os conceitos de orientação a objetos estudados e criar as seguintes Classes:
+Classe Amigo:
+Especificar os atributos de um amigo, definir métodos de acesso (getters/setters) para cada atributo, construtores e implementar os seguintes métodos:
+
+
+• imprimir(): método que retorna uma string contendo todos os dados de um amigo.
+• calcularDiasParaAniversariar(): método que retorna um inteiro informando quantos dias faltam para um amigo fazer aniversário ou quantos dias já se passaram do aniversário do amigo.
+Exemplo1: se o amigo Paulo fizer aniversário em 20/Outubro/1985 e a data atual for 29/Outubro/2012, o método deve retornar uma string: “Passaram 9 dias do aniversário de Paulo”
+Exemplo2: se a amiga Maria fizer aniversário em 05/Novembro/1986 e a data atual for 29/Outubro/2012, o método deve retornar uma string: “Faltam 7 dias para o aniversário de Maria”
+
+Validações a serem feitas para a data de nascimento:
+• dia: permitir valores entre 1 e 31.
+• mês: permitir valores entre 1 e 12
+• ano: valor não pode ser igual ou maior que o ano atual.
+
+Classe Endereco:
+Especificar os atributos de um endereco, definir métodos de acesso (getters/setters) para cada atributo, construtores e implementar os seguintes métodos:
+• imprimir(): método que retorna uma string contendo todos os dados de um endereco.
+
+
+Classe GerenciarAmigo:
+Especificar a classe GerenciarAmigo para realizar o gerenciamento de uma coleção de Amigos. Esta classe terá um ArrayList como atributo. Os métodos que a classe deverá implementar são:
+
+cadastrarAmigo() : método para realizar o cadastro de um objeto da classe Amigo no ArrayList. O usuário deverá ter uma mensagem como de resposta: “Amigo cadastrado com Sucesso!”. O desenvolvedor é quem decidirá se o método retornará um valor ou não;
+• buscarAmigoPeloNome(): método que recebe como parâmetro uma string contendo o nome de um amigo para realizar uma pesquisa no ArrayList e caso encontre o Amigo, retornar uma string contendo todos os dados do amigo cadastrado e quantos dias fazem/faltam para o amigo aniversariar;
+• aniversariarNoMes(): método que recebe como parâmetro um inteiro contendo um mês do ano (entre 1 e 12) e retorna uma string contendo o nome de todos os amigos cadastrados que fazem aniversário no mês informado. Caso o mês informado esteja fora do intervalo válido, informar o usuário;
+• listarTodosAmigos(): método que imprime todos os dados de todos os amigos cadastrados no ArrayList.
+
+
+Classe AppAgenda
+A classe Agenda irá implementar o método main().
+Definir um menu de opções como segue:
+
+============================
+Menu de opções
+===========================
+1- CADASTRAR AMIGOS NA AGENDA
+2- BUSCAR AMIGOS PELO NOME
+3- ANIVERSARIANTES DO MES
+4- LISTAR TODOS OS AMIGOS
+5- SAIR DA AGENDA
+ESCOLHA UMA OPÇÃO
+===========================
+
+
+
+2. Observações:
+• Para todas as classes de definição, criar um construtor vazio e com parâmetros, além de implementar os métodos de acesso setters/getters.
+• Utilizar a classe JOptionPane para entrada e saída de dados.
+• Incluir no topo de cada arquivo (Classe) um comentário com o nome completo e RA de todos os integrantes do grupo.
+• Utilizar o comentário de documentação para comentar os trechos mais importantes do trabalho.
+• Gerar o JavaDoc para o projeto
+• A identação e organização do código será item de avaliação do trabalho.
